@@ -1,5 +1,19 @@
+# secrets and local config
 .env
+*.env
+# data and model outputs
 *.pkl
 *.csv
 mage.log
+tunnel.log
+# python
 __pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+# notebooks / tools
+.ipynb_checkpoints/
+cloudflared
+# mage runtime folders
+.mage_data/
+.logs/

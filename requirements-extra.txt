@@ -1,0 +1,3 @@
+# Installed in Colab only (not needed by CI).
+mage-ai
+snowflake-connector-python

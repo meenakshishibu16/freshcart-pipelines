@@ -1,0 +1,7 @@
+# Core packages used by CI (tests) and by Parts C and D.
+# Keep this light: Mage and the Snowflake connector are installed separately (see requirements-extra.txt).
+pandas
+scikit-learn
+joblib
+pytest
+pika
