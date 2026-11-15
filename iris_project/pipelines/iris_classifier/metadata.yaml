@@ -16,10 +16,16 @@ blocks:
   type: transformer
   language: python
   upstream_blocks: [prepare_data]
-  downstream_blocks: [save_results]
+  downstream_blocks: [save_results, evaluate_model]
 - name: save_results
   uuid: save_results
   type: data_exporter
+  language: python
+  upstream_blocks: [train_model]
+  downstream_blocks: []
+- name: evaluate_model
+  uuid: evaluate_model
+  type: transformer
   language: python
   upstream_blocks: [train_model]
   downstream_blocks: []
